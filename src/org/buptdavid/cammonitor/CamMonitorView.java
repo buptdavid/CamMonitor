@@ -152,7 +152,7 @@ public class CamMonitorView extends SurfaceView implements SurfaceHolder.Callbac
 //			
 //			cs = new SocketCamera(ip, port, c.getWidth(), c.getHeight(), true);
 //	        if (!cs.open()) { /* deal with failure to obtain camera */ 
-//	        	ActivtyUtil.showAlert(CamMonitorView.this.getContext(), "Error", "��������Զ�˷�������", "ȷ��");
+//	        	ActivtyUtil.showAlert(CamMonitorView.this.getContext(), "Error", "不能连接远端服务器！", "确定");
 //	        	return false;
 //	        }
 //	        cs.capture(c); //capture the frame onto the canvas
@@ -164,7 +164,7 @@ public class CamMonitorView extends SurfaceView implements SurfaceHolder.Callbac
 			
 			cs = new SocketCamera(ip, port, width, height, true);
 	        if (!cs.open()) { /* deal with failure to obtain camera */ 
-	        	ActivtyUtil.showAlert(CamMonitorView.this.getContext(), "Error", "��������Զ�˷�������", "ȷ��");
+	        	ActivtyUtil.showAlert(CamMonitorView.this.getContext(), "Error", "不能连接远端服务器！", "确定");
 	        	return false;
 	        }
 	        cs.capture(c); //capture the frame onto the canvas

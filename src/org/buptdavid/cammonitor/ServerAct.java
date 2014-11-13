@@ -74,7 +74,7 @@ public class ServerAct extends Activity {
 			param = DatabaseHelper.query(ServerAct.this, userid);
 			cmView.setCmPara(param);
 		} else {
-			throw new Exception("û�з���id");
+			throw new Exception("没有发现id");
 		}
 		appendMessage("system ready to connect to " + param.getIp());
 		
